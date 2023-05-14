@@ -82,4 +82,84 @@ export class HdmfDto {
     @ApiProperty()
     @IsString()
     educationalAttainment : string;
+
+    @ApiProperty()
+    @IsNotEmpty()
+    spouseRtn : string;
+
+    @ApiProperty()
+    @IsNumber()
+    spouseHousingAccountNumber : number;
+
+    @ApiProperty()
+    @IsString()
+    spouseLastName : string;
+
+    @ApiProperty()
+    @IsString()
+    spouseFirstName : string;
+
+    @ApiProperty()
+    @IsString()
+    spouseNameExtension : string;
+
+    @ApiProperty()
+    @IsString()
+    spouseMiddleName : string;
+
+    @ApiProperty()
+    @IsString()
+    spouseCitizenship : string;
+
+    @ApiProperty()
+    @IsDate()
+    spouseDateOfBirth : Date;
+
+    @ApiProperty()
+    @IsString()
+    spousePlaceOfBirth : string;
+
+    @ApiProperty()
+    @IsString()
+    spouseMaritalStatus : string;
+
+    @ApiProperty()
+    @IsString()
+    spouseSex : string;
+
+    @ApiProperty()
+    @IsString()
+    spousePositionAndDepartment : string;
+
+    @ApiProperty()
+    @IsString()
+    spouseBusinessTelNo : string;
+
+    @ApiProperty()
+    @IsString()
+    spousePagibigMidRtn : string;
+
+    @ApiProperty()
+    @IsNumber()
+    spouseTin : number;
+
+    @ApiProperty()
+    @IsString()
+    spouseEmployer : string;
+
+    @ApiProperty()
+    @IsNumber()
+    spouseYearsInEmployment : number;
+
+    @ApiProperty()
+    @IsString()
+    spouseEmployerBusinessAddress : string;
+
+    @ApiProperty()
+    @IsNumber()
+    spouseGrossMonthlyIncome : number;
+
+    @ApiProperty()
+    @IsString()
+    spouseEducationalAttainment : string;
 }

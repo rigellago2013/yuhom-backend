@@ -25,7 +25,7 @@ enum Role {
 model Hdmf{
     id String @id @default(auto())  @map("_id") @db.ObjectId
     rtn String
-    housingAccountNumber Int @unique
+    housingAccountNumber Int
     lastName String
     firstName String
     nameExtension String
@@ -44,7 +44,27 @@ model Hdmf{
     employerBusinessAddress String?
     grossMonthlyIncome Int?
     educationalAttainment String?
+    spouseRtn String
+    spouseHousingAccountNumber Int
+    spouseLastName String
+    spouseFirstName String
+    spouseNameExtension String
+    spouseMiddleName String
+    spouseCitizenship String
+    spouseDateOfBirth DateTime
+    spousePlaceOfBirth String
+    spouseMaritalStatus String
+    spouseSex String
+    spousePositionAndDepartment String?
+    spouseBusinessTelNo String?
+    spousePagibigMidRtn String
+    spouseTin Int?
+    spouseEmployer String?
+    spouseYearsInEmployment Int?
+    spouseEmployerBusinessAddress String?
+    spouseGrossMonthlyIncome Int?    
     createdAt  DateTime  @default(now())  
     updatedAt  DateTime  @updatedAt 
 }
+
 

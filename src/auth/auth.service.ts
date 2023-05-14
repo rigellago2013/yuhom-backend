@@ -41,7 +41,7 @@ export class AuthService {
       return userToReturn;
     } catch (e) {
       if (e instanceof PrismaClientKnownRequestError) {
-        if (e.code === 'P2002') throw new BadRequestException('email is taken');
+        if (e.code === 'P2002') throw new BadRequestException('Email is taken');
       }
     }
   }

@@ -55,6 +55,7 @@ export class HdmfController {
     if (!hdmf) {
       throw new InternalServerErrorException(`Error on creating hdmf.`);
     }
+    return hdmf;
   }
 
   @UseGuards(JwtGuard)

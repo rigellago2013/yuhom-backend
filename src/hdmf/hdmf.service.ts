@@ -53,10 +53,31 @@ export class HdmfService {
               employerBusinessAddress : hdmfDto.employerBusinessAddress,
               grossMonthlyIncome : hdmfDto.grossMonthlyIncome,
               educationalAttainment : hdmfDto.educationalAttainment,
+              spouseRtn : hdmfDto.spouseRtn,
+              spouseHousingAccountNumber : hdmfDto.spouseHousingAccountNumber,
+              spouseLastName : hdmfDto.spouseLastName,
+              spouseFirstName : hdmfDto.spouseFirstName,
+              spouseNameExtension : hdmfDto.spouseNameExtension,
+              spouseMiddleName : hdmfDto.middleName,
+              spouseCitizenship : hdmfDto.spouseCitizenship,
+              spouseDateOfBirth : hdmfDto.dateOfBirth,
+              spousePlaceOfBirth : hdmfDto.spousePlaceOfBirth,
+              spouseMaritalStatus : hdmfDto.spouseMaritalStatus,
+              spouseSex : hdmfDto.spouseSex,
+              spousePositionAndDepartment : hdmfDto.spousePositionAndDepartment,
+              spouseBusinessTelNo : hdmfDto.spouseBusinessTelNo,
+              spousePagibigMidRtn : hdmfDto.spousePagibigMidRtn,
+              spouseTin : hdmfDto.spouseTin,
+              spouseEmployer : hdmfDto.spouseEmployer,
+              spouseYearsInEmployment : hdmfDto.spouseYearsInEmployment,
+              spouseEmployerBusinessAddress : hdmfDto.spouseEmployerBusinessAddress,
+              spouseGrossMonthlyIncome : hdmfDto.grossMonthlyIncome,
             },
           });
           return hdmf;
         } catch (error) {
+
+          console.error(error)
           if (error instanceof PrismaClientValidationError) {
             throw new BadRequestException('Bad request.');
           }
@@ -101,6 +122,25 @@ export class HdmfService {
               employerBusinessAddress : hdmfDto.employerBusinessAddress,
               grossMonthlyIncome : hdmfDto.grossMonthlyIncome,
               educationalAttainment : hdmfDto.educationalAttainment,
+              spouseRtn : hdmfDto.spouseRtn,
+              spouseHousingAccountNumber : hdmfDto.spouseHousingAccountNumber,
+              spouseLastName : hdmfDto.spouseLastName,
+              spouseFirstName : hdmfDto.spouseFirstName,
+              spouseNameExtension : hdmfDto.spouseNameExtension,
+              spouseMiddleName : hdmfDto.middleName,
+              spouseCitizenship : hdmfDto.spouseCitizenship,
+              spouseDateOfBirth : hdmfDto.dateOfBirth,
+              spousePlaceOfBirth : hdmfDto.spousePlaceOfBirth,
+              spouseMaritalStatus : hdmfDto.spouseMaritalStatus,
+              spouseSex : hdmfDto.spouseSex,
+              spousePositionAndDepartment : hdmfDto.spousePositionAndDepartment,
+              spouseBusinessTelNo : hdmfDto.spouseBusinessTelNo,
+              spousePagibigMidRtn : hdmfDto.spousePagibigMidRtn,
+              spouseTin : hdmfDto.spouseTin,
+              spouseEmployer : hdmfDto.spouseEmployer,
+              spouseYearsInEmployment : hdmfDto.spouseYearsInEmployment,
+              spouseEmployerBusinessAddress : hdmfDto.spouseEmployerBusinessAddress,
+              spouseGrossMonthlyIncome : hdmfDto.grossMonthlyIncome,
             },
           });
           return hdmf;
