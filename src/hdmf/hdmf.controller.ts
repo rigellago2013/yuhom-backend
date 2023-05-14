@@ -22,7 +22,6 @@ import { HdmfDto } from './dto';
 
 @Controller('hdmf')
 @ApiTags('Hdmf')
-@ApiSecurity('bearer')
 export class HdmfController {
   constructor(private hdmfService: HdmfService) {}
 
@@ -50,7 +49,6 @@ export class HdmfController {
     return hdmf;
   }
 
-  @UseGuards(JwtGuard)
   @Post('register')
   async createHdmf(@Body() hdmfDto: HdmfDto) {
     let hdmf = await this.hdmfService.createHdmf(hdmfDto);
