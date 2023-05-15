@@ -70,6 +70,8 @@ model Hdmf{
     spouseYearsInEmployment Int?
     spouseEmployerBusinessAddress String?
     spouseGrossMonthlyIncome Int?    
+    spouseEducationalAttainment String?  
+    spouseOccupation String?
     createdAt  DateTime  @default(now())  
     updatedAt  DateTime  @updatedAt 
 }

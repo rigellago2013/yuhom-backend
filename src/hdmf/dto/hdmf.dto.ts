@@ -190,4 +190,8 @@ export class HdmfDto {
     @ApiProperty()
     @IsString()
     spouseEducationalAttainment : string;
+
+    @ApiProperty()
+    @IsString()
+    spouseOccupation : string;
 }

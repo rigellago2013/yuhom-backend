@@ -78,7 +78,9 @@ export class HdmfService {
               spouseEmployer : hdmfDto.spouseEmployer,
               spouseYearsInEmployment : hdmfDto.spouseYearsInEmployment,
               spouseEmployerBusinessAddress : hdmfDto.spouseEmployerBusinessAddress,
-              spouseGrossMonthlyIncome : hdmfDto.grossMonthlyIncome,
+              spouseGrossMonthlyIncome : hdmfDto.spouseGrossMonthlyIncome,
+              spouseEducationalAttainment : hdmfDto.spouseEducationalAttainment,
+              spouseOccupation : hdmfDto.spouseOccupation,
             },
           });
           return hdmf;
@@ -155,7 +157,9 @@ export class HdmfService {
               spouseEmployer : hdmfDto.spouseEmployer,
               spouseYearsInEmployment : hdmfDto.spouseYearsInEmployment,
               spouseEmployerBusinessAddress : hdmfDto.spouseEmployerBusinessAddress,
-              spouseGrossMonthlyIncome : hdmfDto.grossMonthlyIncome,
+              spouseGrossMonthlyIncome : hdmfDto.spouseGrossMonthlyIncome,
+              spouseEducationalAttainment : hdmfDto.spouseEducationalAttainment,
+              spouseOccupation : hdmfDto.spouseOccupation,
               updatedAt : updatedAt
             },
           });
