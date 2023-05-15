@@ -84,6 +84,34 @@ export class HdmfDto {
     educationalAttainment : string;
 
     @ApiProperty()
+    @IsString()
+    houseNo : string;
+
+    @ApiProperty()
+    @IsString()
+    street : string;
+
+    @ApiProperty()
+    @IsString()
+    brgy : string;
+
+    @ApiProperty()
+    @IsString()
+    city : string;
+
+    @ApiProperty()
+    @IsString()
+    residentialStatus : string;
+    
+    @ApiProperty()
+    @IsNumber()
+    yearsOfStay : number;
+
+    @ApiProperty()
+    @IsString()
+    province : string;
+    
+    @ApiProperty()
     @IsNotEmpty()
     spouseRtn : string;
 

@@ -53,6 +53,13 @@ export class HdmfService {
               employerBusinessAddress : hdmfDto.employerBusinessAddress,
               grossMonthlyIncome : hdmfDto.grossMonthlyIncome,
               educationalAttainment : hdmfDto.educationalAttainment,
+              houseNo : hdmfDto.houseNo,
+              street : hdmfDto.street,
+              brgy : hdmfDto.brgy,
+              city : hdmfDto.city,
+              residentialStatus : hdmfDto.residentialStatus,
+              yearsOfStay : hdmfDto.yearsOfStay,
+              province: hdmfDto.province,
               spouseRtn : hdmfDto.spouseRtn,
               spouseHousingAccountNumber : hdmfDto.spouseHousingAccountNumber,
               spouseLastName : hdmfDto.spouseLastName,
@@ -96,6 +103,7 @@ export class HdmfService {
 
       async updateArticle(id: string, hdmfDto: HdmfDto) {
         try {
+          let updatedAt = new Date();
           const hdmf = await this.prisma.hdmf.update({
             where: {
               id: id,
@@ -122,6 +130,13 @@ export class HdmfService {
               employerBusinessAddress : hdmfDto.employerBusinessAddress,
               grossMonthlyIncome : hdmfDto.grossMonthlyIncome,
               educationalAttainment : hdmfDto.educationalAttainment,
+              houseNo : hdmfDto.houseNo,
+              street : hdmfDto.street,
+              brgy : hdmfDto.brgy,
+              city : hdmfDto.city,
+              residentialStatus : hdmfDto.residentialStatus,
+              yearsOfStay : hdmfDto.yearsOfStay,
+              province: hdmfDto.province,
               spouseRtn : hdmfDto.spouseRtn,
               spouseHousingAccountNumber : hdmfDto.spouseHousingAccountNumber,
               spouseLastName : hdmfDto.spouseLastName,
@@ -141,6 +156,7 @@ export class HdmfService {
               spouseYearsInEmployment : hdmfDto.spouseYearsInEmployment,
               spouseEmployerBusinessAddress : hdmfDto.spouseEmployerBusinessAddress,
               spouseGrossMonthlyIncome : hdmfDto.grossMonthlyIncome,
+              updatedAt : updatedAt
             },
           });
           return hdmf;

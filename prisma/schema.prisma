@@ -44,6 +44,13 @@ model Hdmf{
     employerBusinessAddress String?
     grossMonthlyIncome Int?
     educationalAttainment String?
+    houseNo String?
+    street String?
+    brgy String?
+    city String?
+    residentialStatus String?
+    yearsOfStay Int?
+    province String?
     spouseRtn String
     spouseHousingAccountNumber Int
     spouseLastName String
